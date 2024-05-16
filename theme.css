@@ -38,7 +38,7 @@
 
 	/* amount of spacing and padding */
 	--spacing: 12px;
-
+    --discord-icon: show;
 	/* animations */
 	/* ALL ANIMATIONS CAN BE DISABLED WITH REDUCED MOTION IN DISCORD SETTINGS */
 	--list-item-transition: 0.2s ease; /* channels/members/settings hover transition */
