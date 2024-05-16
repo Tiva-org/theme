@@ -5,8 +5,10 @@
 	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
 
+	--corner-text: 'Discord';
+
 	/* color of status indicators and window controls */
---online-indicator: #23a55a; /* default green */
+	--online-indicator: #23a55a; /* default green */
 	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
 	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
 	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
@@ -17,8 +19,6 @@
 	--accent-3: hsl(190, 70%, 42%); /* accent buttons */
 	--accent-4: hsl(190, 70%, 36%); /* accent buttons when hovered */
 	--accent-5: hsl(190, 70%, 30%); /* accent buttons when clicked */
-	--mention: hsla(190, 80%, 52%, 0.1); /* mentions & mention messages */
-	--mention-hover: hsla(190, 80%, 52%, 0.05); /* mentions & mention messages when hovered */
 
 	/* text colors */
 	--text-0: white; /* text on colored elements */
