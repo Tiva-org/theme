@@ -4,10 +4,10 @@
  * @author tiva
  * @version 1.0.0
  * @invite solarisfn
- * @source https://github.com/refact0r/midnight-discord/blob/master/midnight.theme.css
+ * @source https://raw.githubusercontent.com/Tiva-org/theme/main/theme.css
  * @authorId 942494965219610717
 */
-@import url('https://refact0r.github.io/midnight-discord/midnight.css');
+@import url('https://raw.githubusercontent.com/Tiva-org/theme/main/theme.css');
 
 :root {
 	--font: 'figtree';
