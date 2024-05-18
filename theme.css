@@ -4,7 +4,6 @@
 
 /* customize things here */
 :root {
-	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
 
 	--corner-text: 'Discord';
@@ -17,7 +16,6 @@
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
-	--accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
 	/* --accent-3: hsl(190, 70%, 42%);  accent buttons */
 	/*--accent-4: hsl(190, 70%, 36%);  accent buttons when hovered */
 	/*--accent-5: hsl(190, 70%, 30%);  accent buttons when clicked */
@@ -154,7 +152,6 @@ div.message_ccca67.replying__38514::before /* change reply message bar to neutra
 	color: var(--accent-3) !important;
 }
 .divider__855e3 /* unread divider */,
-.mention_dd733a /* NEW unread pill */,
 .mentionsBar__7d867 /* channel list new mention pill */ {
 	--status-danger: var(--accent-3);
 }
@@ -193,7 +190,6 @@ path[fill='var(--white-500)'] {
 .colorDefault_e361cf:active:not(.hideInteraction__0b569) .caret_ce50ce /* menu option active */,
 .tabBar__73938 .addFriend__4c0a2.addFriend__4c0a2.addFriend__4c0a2 /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
-.interactive:hover /* mention hover */,
 .uploadIcon_d35ec2 /* profile upload image */,
 .focused_a7ad64 .userMenuUsername_d2fe10 .userMenuText_b1842d /* account switcher account hover */,
 .dots_a97068 /* typing dots */,
@@ -823,12 +819,8 @@ html.theme-light,
 	--android-ripple: hsl(var(--white-500-hsl) / 0.07);
 	--background-accent: var(--bg-2);
 	--background-floating: var(--bg-3);
-	--background-mentioned: var(--mention);
-	--background-mentioned-hover: var(--mention-hover);
 	--background-message-automod: hsl(var(--red-400-hsl) / 0.05);
 	--background-message-automod-hover: hsl(var(--red-400-hsl) / 0.1);
-	--background-message-highlight: var(--active);
-	--background-message-highlight-hover: var(--hover);
 	--background-message-hover: var(--message-hover);
 	--background-mobile-primary: var(--bg-4);
 	--background-mobile-secondary: var(--primary-630);
@@ -947,7 +939,6 @@ html.theme-light,
 	--focus-primary: var(--blue-345);
 	--forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl) / 0.8);
 	--forum-post-tag-background: hsl(var(--primary-660-hsl) / 0.9);
-	--guild-notifications-bottom-sheet-pill-background: var(--primary-700);
 	--header-muted: var(--text-4);
 	--header-primary: var(--text-2);
 	--header-secondary: var(--text-4);
@@ -981,8 +972,6 @@ html.theme-light,
 	--legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl) / 0.95);
 	--live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
 	--logo-primary: var(--white-500);
-	--mention-background: var(--mention);
-	--mention-foreground: var(--accent-1);
 	--modal-background: var(--bg-4);
 	--modal-footer-background: var(--bg-4);
 	--navigator-header-tint: var(--white-500);
