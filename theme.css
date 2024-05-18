@@ -4,6 +4,7 @@
 
 /* customize things here */
 :root {
+	/* font, change to 'gg sans' for default discord font*/
 	--font: 'figtree';
 
 	--corner-text: 'Discord';
@@ -16,7 +17,8 @@
 
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
-	/* --accent-3: hsl(190, 70%, 42%);  accent buttons */
+	--accent-2: hsl(190, 70%, 48%); /* general unread/mention elements */
+	 --accent-3: hsl(190, 70%, 42%);  
 	/*--accent-4: hsl(190, 70%, 36%);  accent buttons when hovered */
 	/*--accent-5: hsl(190, 70%, 30%);  accent buttons when clicked */
 	/* acrylic */
@@ -152,11 +154,19 @@ div.message_ccca67.replying__38514::before /* change reply message bar to neutra
 	color: var(--accent-3) !important;
 }
 .divider__855e3 /* unread divider */,
+.mention_dd733a /* NEW unread pill */,
+.mentionsBar__7d867 /* channel list new mention pill */ {
+	--status-danger: var(--accent-3);
+}
+.message_ccca67.mentioned_fa6fd2:before /* mention message left edge */,
 .botTagOP_fd6360 /* OP tag */ {
 	background: var(--accent-3);
 }
 .container__2ed72.checked__36fdc /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
+}
+.mention_dd733a:active /* NEW unread pill when clicked */ {
+	background: var(--accent-4);
 }
 path[fill='rgba(35, 165, 90, 1)'] {
 	fill: var(--accent-3);
@@ -183,6 +193,7 @@ path[fill='var(--white-500)'] {
 .colorDefault_e361cf:active:not(.hideInteraction__0b569) .caret_ce50ce /* menu option active */,
 .tabBar__73938 .addFriend__4c0a2.addFriend__4c0a2.addFriend__4c0a2 /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
+.interactive:hover /* mention hover */,
 .uploadIcon_d35ec2 /* profile upload image */,
 .focused_a7ad64 .userMenuUsername_d2fe10 .userMenuText_b1842d /* account switcher account hover */,
 .dots_a97068 /* typing dots */,
@@ -525,6 +536,7 @@ button.button__581d0 /* small buttons */,
 	top: 6px;
 	right: 6px;
 }
+.wrapper__53064 /* mentions */,
 .searchBar__5a20a /* search bar */,
 .searchBar__621ec .searchBarComponent__8f95f /* find conversation search bar */,
 .topPill__63ad4 .item__48dda /* friend online/categories */ {
@@ -706,6 +718,7 @@ button.button__581d0 /* small buttons */,
 	padding-top: 2px;
 }
 /* improve highlight message left edge */
+.message_ccca67.mentioned_fa6fd2::before,
 .replying__38514::before {
 	width: 4px;
 	border-radius: 4px;
@@ -810,8 +823,12 @@ html.theme-light,
 	--android-ripple: hsl(var(--white-500-hsl) / 0.07);
 	--background-accent: var(--bg-2);
 	--background-floating: var(--bg-3);
+	--background-mentioned: var(--mention);
+	--background-mentioned-hover: var(--mention-hover);
 	--background-message-automod: hsl(var(--red-400-hsl) / 0.05);
 	--background-message-automod-hover: hsl(var(--red-400-hsl) / 0.1);
+	--background-message-highlight: var(--active);
+	--background-message-highlight-hover: var(--hover);
 	--background-message-hover: var(--message-hover);
 	--background-mobile-primary: var(--bg-4);
 	--background-mobile-secondary: var(--primary-630);
@@ -930,6 +947,7 @@ html.theme-light,
 	--focus-primary: var(--blue-345);
 	--forum-post-extra-media-count-container-background: hsl(var(--primary-660-hsl) / 0.8);
 	--forum-post-tag-background: hsl(var(--primary-660-hsl) / 0.9);
+	--guild-notifications-bottom-sheet-pill-background: var(--primary-700);
 	--header-muted: var(--text-4);
 	--header-primary: var(--text-2);
 	--header-secondary: var(--text-4);
@@ -963,13 +981,17 @@ html.theme-light,
 	--legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl) / 0.95);
 	--live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
 	--logo-primary: var(--white-500);
+	--mention-background: var(--mention);
+	--mention-foreground: var(--accent-1);
 	--modal-background: var(--bg-4);
 	--modal-footer-background: var(--bg-4);
 	--navigator-header-tint: var(--white-500);
 	--polls-image-normal-border: hsl(var(--black-430-hsl) / 0.9);
 	--polls-victor-border: var(--yellow-300);
+	--polls-victor-fill: var(--mention);
 	--polls-victor-label: var(--primary-600);
 	--polls-voted-border: var(--green-330);
+	--polls-voted-fill: var(--mention);
 	--polls-voted-label: var(--primary-600);
 	--profile-gradient-card-background: hsl(var(--black-500-hsl) / 0.7);
 	--profile-gradient-message-input-border: hsl(var(--primary-500-hsl) / 0.48);
@@ -1100,6 +1122,7 @@ html.theme-light,
 	--green-500: var(--accent-4);
 	--green-530: var(--accent-5);
 
+	--brand-experiment-15a: var(--mention); /* background of reacted reactions */
 	--brand-360: var(--accent-2); /* invite text */
 
 	--primary-500: var(--bg-2); /* progress bars */
