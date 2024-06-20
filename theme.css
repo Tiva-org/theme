@@ -1136,4 +1136,5 @@ html.theme-light,
 
 * {
 	scrollbar-color: unset !important;
+	scrollbar-width: unset !important;
 }
