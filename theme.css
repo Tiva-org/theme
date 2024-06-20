@@ -9,20 +9,20 @@
 	--corner-text: 'Discord';
 
 	/* color of status indicators and window controls */
-	--online-indicator: #23a55a; /* change to #23a55a for default green */
+	--online-indicator: #23a55a; /* default green */
 	--dnd-indicator: hsl(340, 60%, 60%); /* change to #f13f43 for default red */
 	--idle-indicator: hsl(50, 60%, 60%); /* change to #f0b232 for default yellow */
 	--streaming-indicator: hsl(260, 60%, 60%); /* change to #593695 for default purple */
 
-		/* acrylic */
-		--glass-menu-bg-blur: 15px;
-		--glass-menu-bg-primary-500-25a: hsl(var(--primary-500-hsl)/0.25);
-		--glass-menu-bg-primary-600-20a: hsl(var(--primary-600-hsl)/0.2);
-		--glass-menu-bg-primary-600-35a: hsl(var(--primary-600-hsl)/0.35);
-		--glass-menu-bg-primary-600-50a: hsl(var(--primary-600-hsl)/0.5);
-		--glass-menu-bg-primary-660-50a: hsl(var(--primary-660-hsl)/0.5);
-		--glass-menu-bg-primary-800-50a: hsl(var(--primary-800-hsl)/0.5);
-		--glass-menu-bg-tertiary-700-50a: hsl(var(--primary-700-hsl)/0.5);
+	/* acrylic */
+	--glass-menu-bg-blur: 15px;
+	--glass-menu-bg-primary-500-25a: hsl(var(--primary-500-hsl)/0.25);
+	--glass-menu-bg-primary-600-20a: hsl(var(--primary-600-hsl)/0.2);
+	--glass-menu-bg-primary-600-35a: hsl(var(--primary-600-hsl)/0.35);
+	--glass-menu-bg-primary-600-50a: hsl(var(--primary-600-hsl)/0.5);
+	--glass-menu-bg-primary-660-50a: hsl(var(--primary-660-hsl)/0.5);
+	--glass-menu-bg-primary-800-50a: hsl(var(--primary-800-hsl)/0.5);
+	--glass-menu-bg-tertiary-700-50a: hsl(var(--primary-700-hsl)/0.5);
 		
 	/* accent colors */
 	--accent-1: hsl(190, 70%, 60%); /* links */
