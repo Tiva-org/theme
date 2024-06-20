@@ -1019,7 +1019,6 @@ html.theme-light,
 	--legacy-blur-fallback-default: hsl(var(--primary-660-hsl) / 0.975);
 	--legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl) / 0.95);
 	--live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
-	--logo-primary: var(--white-500);
 	--mention-background: var(--mention);
 	--mention-foreground: var(--accent-1);
 	--modal-background: var(--bg-4);
