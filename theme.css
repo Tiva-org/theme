@@ -195,6 +195,16 @@ path[fill='var(--white-500)'] {
 
 
 }
+.mention_c10249 /* NEW unread pill */,
+
+
+.mentionsBar_eba0ba /* channel list new mention pill */ {
+
+
+	--status-danger: var(--accent-3);
+
+
+}
 .focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c /* account switcher account hover */,
 .dots_ce0450 /* typing dots */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */,
@@ -204,6 +214,7 @@ path[fill='var(--white-500)'] {
 #app-mount .activeButton_b48941 /* member page pagination button */ ,
 #app-mount .tooltipBrand_b6c360 /* member page filter tooltip */,
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac /* active voice channel icons */,
+.message_d5deea.mentioned_d5deea:before 
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac:hover /* active voice channel icons */,
 .vcd-screen-picker-radio[data-checked="true"] .defaultColor_a595eb /* vencord stream resolution picker buttons when active */,
 .icon_c07d45 /* streaming activity type icon  */,
