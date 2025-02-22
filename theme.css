@@ -716,7 +716,6 @@ button.button_dd4f85 /* small buttons */,
 	padding-top: 2px;
 }
 /* improve highlight message left edge */
-.message_d5deea.mentioned_d5deea::before,
 .replying_d5deea::before {
 	width: 4px;
 	border-radius: 4px;
