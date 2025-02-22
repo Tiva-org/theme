@@ -156,11 +156,19 @@ div.message_d5deea.replying_d5deea::before /* change reply message bar to neutra
 	color: var(--accent-3) !important;
 }
 .divider_fc5f50 /* unread divider */,
+.mention_c10249 /* NEW unread pill */,
+.mentionsBar_eba0ba /* channel list new mention pill */ {
+	--status-danger: var(--accent-3);
+}
+.message_d5deea.mentioned_d5deea:before /* mention message left edge */,
 .botTagOP_a02df3 /* OP tag */ {
 	background: var(--accent-3);
 }
 .container_cebd1c.checked_cebd1c /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
+}
+.mention_c10249:active /* NEW unread pill when clicked */ {
+	background: var(--accent-4);
 }
 path[fill='rgba(35, 165, 90, 1)'] {
 	fill: var(--accent-3);
@@ -187,24 +195,8 @@ path[fill='var(--white-500)'] {
 .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) .caret_d90b3d /* menu option active */,
 .tabBar_c2739c .addFriend_c2739c.addFriend_c2739c.addFriend_c2739c /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
+.interactive:hover /* mention hover */,
 .uploadIcon_f2f431 /* profile upload image */,
-.mention_c10249:active /* NEW unread pill when clicked */ {
-
-
-	background: var(--accent-4);
-
-
-}
-.mention_c10249 /* NEW unread pill */,
-
-
-.mentionsBar_eba0ba /* channel list new mention pill */ {
-
-
-	--status-danger: var(--accent-3);
-
-
-}
 .focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c /* account switcher account hover */,
 .dots_ce0450 /* typing dots */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */,
@@ -214,17 +206,12 @@ path[fill='var(--white-500)'] {
 #app-mount .activeButton_b48941 /* member page pagination button */ ,
 #app-mount .tooltipBrand_b6c360 /* member page filter tooltip */,
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac /* active voice channel icons */,
-.message_d5deea.mentioned_d5deea:before 
 .button_adcaac.buttonColor_adcaac.buttonActive_adcaac:hover /* active voice channel icons */,
 .vcd-screen-picker-radio[data-checked="true"] .defaultColor_a595eb /* vencord stream resolution picker buttons when active */,
 .icon_c07d45 /* streaming activity type icon  */,
 .theme-dark .tooltipGreen_b6c360, .theme-light .tooltipGreen_b6c360 /* tooltip text like vc latency */ {
 	color: var(--text-0);
 }
-	--background-mentioned: var(--mention);
-
-
-	--background-mentioned-hover: var(--mention-hover);
 #app-mount .button__33db6, .theme-light .button__33db6 /* notice banner button */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */ {
 	border-color: var(--text-0);
@@ -250,10 +237,6 @@ path[fill='var(--white-500)'] {
 .menu_ad5fac .menuItemFocused_ad5fac /* account switch button hover */ {
 	color: var(--text-3);
 }
---mention-background: var(--mention);
-
-
-	--mention-foreground: var(--accent-1);
 .menu_ad5fac .menuItemFocused_ad5fac path /* account switch button hover */ {
 	fill: var(--text-3);
 }
@@ -743,6 +726,7 @@ button.button_dd4f85 /* small buttons */,
 	padding-top: 2px;
 }
 /* improve highlight message left edge */
+.message_d5deea.mentioned_d5deea::before,
 .replying_d5deea::before {
 	width: 4px;
 	border-radius: 4px;
@@ -999,6 +983,7 @@ html.theme-light,
 	--info-warning-text: var(--white-500);
 	--input-background: var(--bg-3);
 	--input-placeholder-text: var(--text-5);
+	--interactive-active: var(--text-3);
 	--interactive-hover: var(--text-3);
 	--interactive-muted: var(--text-5);
 	--interactive-normal: var(--text-4);
@@ -1008,6 +993,8 @@ html.theme-light,
 	--legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl) / 0.95);
 	--live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
 	--logo-primary: var(--white-500);
+	--mention-background: var(--mention);
+	--mention-foreground: var(--accent-1);
 	--modal-background: var(--bg-4);
 	--modal-footer-background: var(--bg-4);
 	--navigator-header-tint: var(--white-500);
