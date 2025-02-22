@@ -188,6 +188,13 @@ path[fill='var(--white-500)'] {
 .tabBar_c2739c .addFriend_c2739c.addFriend_c2739c.addFriend_c2739c /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
 .uploadIcon_f2f431 /* profile upload image */,
+.mention_c10249:active /* NEW unread pill when clicked */ {
+
+
+	background: var(--accent-4);
+
+
+}
 .focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c /* account switcher account hover */,
 .dots_ce0450 /* typing dots */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */,
