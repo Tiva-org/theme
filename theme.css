@@ -210,6 +210,10 @@ path[fill='var(--white-500)'] {
 .theme-dark .tooltipGreen_b6c360, .theme-light .tooltipGreen_b6c360 /* tooltip text like vc latency */ {
 	color: var(--text-0);
 }
+	--background-mentioned: var(--mention);
+
+
+	--background-mentioned-hover: var(--mention-hover);
 #app-mount .button__33db6, .theme-light .button__33db6 /* notice banner button */,
 .lookOutlined_dd4f85.colorWhite_dd4f85 /* server banner buttons */ {
 	border-color: var(--text-0);
