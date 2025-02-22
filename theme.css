@@ -250,6 +250,10 @@ path[fill='var(--white-500)'] {
 .menu_ad5fac .menuItemFocused_ad5fac /* account switch button hover */ {
 	color: var(--text-3);
 }
+--mention-background: var(--mention);
+
+
+	--mention-foreground: var(--accent-1);
 .menu_ad5fac .menuItemFocused_ad5fac path /* account switch button hover */ {
 	fill: var(--text-3);
 }
