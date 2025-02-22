@@ -156,19 +156,11 @@ div.message_d5deea.replying_d5deea::before /* change reply message bar to neutra
 	color: var(--accent-3) !important;
 }
 .divider_fc5f50 /* unread divider */,
-.mention_c10249 /* NEW unread pill */,
-.mentionsBar_eba0ba /* channel list new mention pill */ {
-	--status-danger: var(--accent-3);
-}
-.message_d5deea.mentioned_d5deea:before /* mention message left edge */,
 .botTagOP_a02df3 /* OP tag */ {
 	background: var(--accent-3);
 }
 .container_cebd1c.checked_cebd1c /* settings checkbuttons */ {
 	background: var(--accent-3) !important;
-}
-.mention_c10249:active /* NEW unread pill when clicked */ {
-	background: var(--accent-4);
 }
 path[fill='rgba(35, 165, 90, 1)'] {
 	fill: var(--accent-3);
@@ -195,7 +187,6 @@ path[fill='var(--white-500)'] {
 .colorDefault_d90b3d:active:not(.hideInteraction_d90b3d) .caret_d90b3d /* menu option active */,
 .tabBar_c2739c .addFriend_c2739c.addFriend_c2739c.addFriend_c2739c /* add friend button */,
 #app-mount .button__33db6 /* notice banner button */,
-.interactive:hover /* mention hover */,
 .uploadIcon_f2f431 /* profile upload image */,
 .focused_e1268c .userMenuUsername_e1268c .userMenuText_e1268c /* account switcher account hover */,
 .dots_ce0450 /* typing dots */,
@@ -539,7 +530,6 @@ button.button_dd4f85 /* small buttons */,
 	top: 6px;
 	right: 6px;
 }
-.wrapper_a7c28c /* mentions */,
 .searchBar_a46bef /* search bar */,
 .searchBar_f0963d .searchBarComponent_f0963d /* find conversation search bar */,
 .topPill_a0 .item_a0 /* friend online/categories */ {
@@ -837,8 +827,6 @@ html.theme-light,
 	--android-ripple: hsl(var(--white-500-hsl) / 0.07);
 	--background-accent: var(--bg-2);
 	--background-floating: var(--bg-3);
-	--background-mentioned: var(--mention);
-	--background-mentioned-hover: var(--mention-hover);
 	--background-message-automod: hsl(var(--red-400-hsl) / 0.05);
 	--background-message-automod-hover: hsl(var(--red-400-hsl) / 0.1);
 	--background-message-highlight: var(--active);
@@ -995,8 +983,6 @@ html.theme-light,
 	--legacy-blur-fallback-ultra-thin: hsl(var(--black-500-hsl) / 0.95);
 	--live-stage-tile-border: hsl(var(--primary-500-hsl) / 0.6);
 	--logo-primary: var(--white-500);
-	--mention-background: var(--mention);
-	--mention-foreground: var(--accent-1);
 	--modal-background: var(--bg-4);
 	--modal-footer-background: var(--bg-4);
 	--navigator-header-tint: var(--white-500);
